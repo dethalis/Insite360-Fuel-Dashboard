@@ -98,7 +98,7 @@ col3.metric("**Highest Flow**", f"{filtered_data['Flow_Rate'].max():.2f} gpm")
 col4.metric(f"**Low Flow** (<{LOW_FLOW_THRESHOLD} gpm)", 
             len(filtered_data[filtered_data['Flow_Rate'] < LOW_FLOW_THRESHOLD]))
 
-# Tabs - Now only 2 tabs
+# Tabs
 tab1, tab2 = st.tabs(["📊 Overview", "🔧 Fuel Position Details"])
 
 with tab1:
